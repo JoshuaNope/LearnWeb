@@ -6,12 +6,3 @@
     height: 150px;
     object-fit: scale-down;
 }
-
-.navbar-brand-centered {
-    position: absolute;
-    left: 50%;
-    display: block;
-    width: 160px;
-    text-align: center;
-    background-color: transparent;
-}
