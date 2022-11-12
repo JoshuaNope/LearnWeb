@@ -18,7 +18,7 @@
       <!-- Navigation Bar -->
       <nav class="navbar bg-warning">
         <div class="container-fluid">
-          <a class="navbar-brand bold" href="#">
+          <a class="navbar-brand bold mx-auto" href="#">
             <img
               src="assets/images/Logo.svg"
               alt="Logo"
@@ -32,20 +32,47 @@
       </nav>
       <!-- Navigation bar -->
       <!-- Content -->
-      <div class="container mt-5 mb-5 text-center">
-        <img src="assets/images/off.png" alt="Gambar Off" />
-        <h1 class="colorful mt-3 mb-3">On/Off Lamp</h1>
-        <button class="btn btn-outline-warning">Saklar</button>
+      <div class="container mt-5 mb-5 mx-auto text-center">
+        <img
+          style="width: 50%; height: 50%; object-fit: cover"
+          src="assets/images/off.gif"
+          alt="Gambar Lampu"
+          id="off"
+        />
+        <h1 class="colorful mt-3 mb-3" id="text">Off</h1>
+        <button class="btn btn-outline-warning" onclick="saklar('on')">
+          Saklar On
+        </button>
+        <button class="btn btn-outline-warning" onclick="saklar('off')">
+          Saklar Off
+        </button>
       </div>
       <!-- Content -->
     </div>
 
     <!-- Script JS -->
     <script>
-        function saklar() {
+      function saklar(params) {
+        // params = parameters
+        console.log(params);
 
+        // Membuat Initialisasi
+        let off = document.getElementById("off");
+        let text = document.getElementById("text");
+
+        // Mengubah assets/text (Logika)
+        if (params == "on") {
+          off.src = "assets/images/on.gif";
+          text.innerHTML = "On";
+        } else if(params == "off") {
+          off.src = "assets/images/off.gif";
+          text.innerHTML = "Off";
+        } else {
+          console.log(err);
         }
+      }
     </script>
+    <!-- Script JS -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
