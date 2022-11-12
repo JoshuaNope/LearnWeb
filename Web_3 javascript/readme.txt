@@ -1,2 +1,9 @@
 Link web memakai replit : https://TestingCuy3.joshuasteven1.repl.co
-BOM : Browser Object Model
+
+===================================================================
+
+Using:
+-Bootstrap
+-Javascript
+-HTML
+-CSS
