@@ -3,7 +3,7 @@ Link web memakai replit :
 ===================================================================
 
 Using:
--Tailwind CSS
+-Tailwind CSS and HyperUI
 -Javascript
 -HTML
 -CSS
