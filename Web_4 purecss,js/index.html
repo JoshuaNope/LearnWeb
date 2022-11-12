@@ -1,12 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+      integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Web 4</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="pure-g">
+      <!-- Lampu 1 -->
+      <div class="pure-u-1">
+        <h1>Lampu 1</h1>
+        <img src="assets/images/off.gif" alt="" id="lampu1" />
+        <button class="pure-button button-warning" onclick="saklar('on')">
+          On
+        </button>
+        <button class="pure-button button-error" onclick="saklar('off')">
+          Off
+        </button>
+      </div>
+      <!-- Lampu 1 -->
+
+      <!-- Lampu 2 -->
+      <div class="pure-u-1">
+        <h1>Lampu 2</h1>
+        <img src="assets/images/off.gif" alt="" id="lampu2" />
+        <button class="pure-button button-warning" onclick="saklar('on')">
+          On
+        </button>
+        <button class="pure-button button-error" onclick="saklar('off')">
+          Off
+        </button>
+      </div>
+      <!-- Lampu 2 -->
+
+      <!-- Lampu 3 -->
+      <div class="pure-u-1">
+        <h1>Lampu 3</h1>
+        <img src="assets/images/off.gif" alt="" id="lampu3" />
+        <button class="pure-button button-warning" onclick="saklar('on')">
+          On
+        </button>
+        <button class="pure-button button-error" onclick="saklar('off')">
+          Off
+        </button>
+      </div>
+      <!-- Lampu 3 -->
+    </div>
+
+    <!-- Script JS -->
+    <script src="saklar.js" type="application/javascript" />
+    <!-- Script JS -->
+  </body>
 </html>
